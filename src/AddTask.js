@@ -10,6 +10,7 @@ const AddTask = ({ newTask, setNewTask, handleSubmit}) => {
       <input type="text" 
       autoFocus
       ref={inputRef}
+      id="addtask"
       placeholder="Add New Task"
       required
       value={newTask}

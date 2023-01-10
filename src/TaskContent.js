@@ -4,7 +4,8 @@ import Tasklist from './Tasklist'
 const TaskContent = ({ tasks, handleCheck, handleDelete }) => {
   return (
     <>
-      {tasks.length ? (<Tasklist 
+      {tasks.length ? (
+      <Tasklist 
       tasks={tasks}
       handleCheck={handleCheck}
       handleDelete={handleDelete} />) : (

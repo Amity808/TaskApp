@@ -33,16 +33,16 @@ function App() {
   ])
   const [newTask, setNewTask ] = useState('')
 
-  const setSaveTask = (newTasks) => {
-    setTasks(newTask);
-    localStorage.setItem('taskReminder', JSON.stringify(newTasks))
-  }
+  // const setSaveTask = (newTasks) => {
+  //   setTasks(newTask);
+  //   localStorage.setItem('taskReminder', JSON.stringify(newTasks))
+  // }
 
   const addTask = (task) => {
-    const id = tasks.length ? tasks[tasks.length -1] + 1 : 1;
+    const id = tasks.length ? tasks[tasks.length -1].id + 1 : 1;
     const muyNewTask = {id, checked:false, task}
     const listTask = [...tasks, muyNewTask]
-    setSaveTask(listTask)
+    setTasks(listTask)
    
   }
 

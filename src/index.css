@@ -141,7 +141,7 @@ button:hover {
   outline: none;
 }
 
-.searchForm {
+.searchTask {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -149,7 +149,7 @@ button:hover {
   padding: 0 0.5rem 0.25rem;
   border: 1px solid #eeee;
 }
-.searchForm label {
+.searchTask label {
   flex-grow: 1;
   max-height: 48px;
   font-size: 1rem;
